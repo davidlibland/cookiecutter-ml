@@ -20,7 +20,7 @@ license = {text = "{{cookiecutter.open_source_license}}"}
 dependencies = [
   {% if cookiecutter.command_line_interface.lower() == "click" -%}
   "click",
-{%- endif %}
+  {%- endif %}
     "numpy",
     "pandas",
     "jupyter",
@@ -57,7 +57,7 @@ package-dir = {"" = "src"}
 
 {% if cookiecutter.command_line_interface == 'Click' %}
 [project.scripts]
-{{cookiecutter.slug}} = "{{cookiecutter.slug}}.cli:app"
+{{cookiecutter.project_slug}} = "{{cookiecutter.project_slug}}.cli:app"
 {% endif %}
 
 
